@@ -314,3 +314,14 @@ button:hover {
     font-size: 1rem;
   }
 }
+
+
+.active-card {
+  outline: 3px solid #000;
+  transform: scale(1.07);
+}
+
+
+.active-link {
+  border-bottom: 2px solid #ff7a59;
+}
