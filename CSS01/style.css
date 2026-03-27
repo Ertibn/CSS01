@@ -1,9 +1,6 @@
-/* =========================
-   GLOBAL RESET & VARIABLES
-========================= */
 :root {
-  --primary: #38bdf8;      /* soft blue */
-  --secondary: #34d399;    /* soft green */
+  --primary: #38bdf8;     
+  --secondary: #34d399;   
   --dark: #1f2937;
   --muted: #6b7280;
   --bg-light: #f8fafc;
@@ -23,9 +20,7 @@ body {
   line-height: 1.6;
 }
 
-/* =========================
-   TEAM SECTION
-========================= */
+
 .team {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -34,7 +29,7 @@ body {
   background: linear-gradient(135deg, #f3f7ff, #e0e7ff);
 }
 
-/* Team Card */
+
 .card {
   background: var(--white);
   border-radius: 18px;
@@ -51,7 +46,6 @@ body {
   border-color: var(--primary);
 }
 
-/* Profile Image */
 .profile-img {
   width: 120px;
   height: 120px;
@@ -61,7 +55,6 @@ body {
   margin-bottom: 16px;
 }
 
-/* Name & Role */
 .card h3 {
   font-size: 1.6rem;
   margin-bottom: 6px;
@@ -73,7 +66,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Social Icons */
 .socials {
   list-style: none;
   margin-bottom: 22px;
@@ -94,7 +86,6 @@ body {
   opacity: 0.75;
 }
 
-/* Email Button */
 .email {
   display: inline-block;
   padding: 11px 26px;
@@ -111,9 +102,7 @@ body {
   transform: scale(1.05);
 }
 
-/* =========================
-   PRICING SECTION
-========================= */
+
 .box {
   padding: 100px 6%;
   background: var(--white);
@@ -132,7 +121,7 @@ body {
   gap: 35px;
 }
 
-/* Pricing Card */
+
 .plan {
   display: flex;
   justify-content: center;
@@ -181,7 +170,7 @@ body {
   color: var(--dark);
 }
 
-/* Pricing Button */
+
 .price button {
   margin-top: 25px;
   padding: 14px 32px;
@@ -197,9 +186,7 @@ body {
   background: #0ea5e9;
 }
 
-/* =========================
-   HERO SECTION
-========================= */
+
 .hero {
   position: relative;
   min-height: 100vh;
@@ -209,7 +196,7 @@ body {
   overflow: hidden;
 }
 
-/* Background Image */
+
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -219,7 +206,7 @@ body {
   z-index: -1;
 }
 
-/* Navigation */
+
 .nav {
   display: flex;
   justify-content: center;
@@ -239,14 +226,18 @@ body {
   opacity: 0.85;
 }
 
-/* Hero Content */
+/* =========================
+   EDITED CONTENT SECTION
+========================= */
 .content {
   flex: 1;
   max-width: 650px;
   padding: 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; /* vertical centering */
+  align-items: center;     /* horizontal centering */
+  text-align: center;      /* center text */
 }
 
 .content h1 {
@@ -259,24 +250,21 @@ body {
   margin-bottom: 1.8rem;
 }
 
-/* Hero Button */
 .content button {
-  align-self: flex-start;
   padding: 14px 34px;
   background: var(--secondary);
   color: #000;
   border-radius: 8px;
   font-weight: 600;
   transition: background 0.3s;
+  /* align-self removed so it stays centered */
 }
 
 .content button:hover {
   background: #10b981;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+
 @media (max-width: 768px) {
   .team {
     padding: 60px 5%;
